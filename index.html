@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 
 <body class="p-4">
-    <div class="flex flex-row min-h-screen">
-        <aside class="w-1/4  flex flex-col  text-white ">
+    <div class="flex flex-col lg:flex-row min-h-screen">
+        <!-- Sidebar -->
+        <aside class="lg:w-1/4 w-full flex flex-col text-white">
             <div class="bg-blue-600 flex flex-col items-center py-8">
                 <img src="https://scontent.fdbd1-3.fna.fbcdn.net/v/t39.30808-6/369972074_3692800664288454_5675072444733920849_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=2XO_-isuge4Q7kNvgE0mmkF&_nc_zt=23&_nc_ht=scontent.fdbd1-3.fna&_nc_gid=AFYE7kREQe9c0Xcwgo67pGR&oh=00_AYCVX-EnHYJxczI99Losq3iCi1ZTr_LlKR6rN4tStsqJXA&oe=676CFAF8"
                     class="rounded-full h-44 w-44 mb-4" alt="Varun Profile Image">
                 <h1 class="text-4xl font-bold">Varun</h1>
                 <h1 class="text-xl mb-4">Kumar</h1>
-                <div class="flex  gap-2">
+                <div class="flex gap-2">
                     <a href="https://github.com/Varun-kumarrr" class="flex items-center gap-2 hover:underline"
                         aria-label="GitHub Profile">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
@@ -47,38 +47,31 @@
                 <h1 class="w-full border-b border-white text-xl">Skills</h1>
                 <h1 class="px-8 pt-8 text-slate-300">C language</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(85% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(85% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">Cpp language</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(75% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(75% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">DSA</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(85% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(85% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">HTML</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(70% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(70% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">CSS</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(50% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(50% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">BootStrap</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(40% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(40% - 8px);"></div>
                 </div>
                 <h1 class="px-8 pt-8 text-slate-300">Tailwind</h1>
                 <div class=" bg-gray-200 rounded h-1 dark:bg-gray-700 relative mx-8">
-                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(55% - 8px);">
-                    </div>
+                    <div class="bg-blue-600 h-1 rounded" style=" width: calc(55% - 8px);"></div>
                 </div>
                 <h1 class="w-full border-b border-white text-xl pt-8">Certificates</h1>
                 <h1 class="px-8 pt-8 text-slate-300">C Language</h1>
@@ -86,7 +79,9 @@
                 <h1 class="px-8  text-slate-300">Salesforce</h1>
             </div>
         </aside>
-        <main class="flex-grow px-8">
+
+        <!-- Main Content -->
+        <main class="lg:w-3/4 w-full px-8 py-4">
             <h1 class="text-2xl text-blue-500 border-b border-black">OBJECTIVE</h1>
             <p class="text-gray-700 mt-2">Enthusiastic Computer Science student with
                 a strong foundation in both front-end and back-end development, eager
@@ -99,15 +94,14 @@
                 contributing to innovative projects and enhancing my skills in
                 both front-end and back-end technologies.</p>
             <h1 class="text-2xl text-blue-500 border-b border-black pt-4">WORK EXPERIANCE - 6 Months</h1>
-            <ul class="list-disc mx-5 my-2 flex flex-row font-bold text-xl justify-between" >
-                <li >Web Development Intern
-                </li>
+            <ul class="list-disc mx-5 my-2 flex flex-row font-bold text-xl justify-between">
+                <li>Web Development Intern</li>
                 <h1>january/2024 - july/2024</h1>
             </ul>
             <h1 class="font-bold px-6">College Website Project</h1>
             <ul class="text-gray-700 mt-2 list-disc mx-10 ">
                 <li>Contributed to the development and maintenance of the official
-                     college website, enhancing user experience and functionality.</li>
+                    college website, enhancing user experience and functionality.</li>
                 <li>Collaborated with a team of developers to implement responsive web design, 
                     ensuring seamless access across devices.</li>
                 <li>Assisted in writing and optimizing code using HTML, CSS, JavaScript, and 
@@ -118,8 +112,7 @@
             </ul>
             <h1 class="text-2xl text-blue-500 border-b border-black pt-4">PROJECTS</h1>
             <ul class="list-disc mx-5 my-2 font-bold text-xl" >
-                <li >Build Resume
-                </li>
+                <li>Build Resume</li>
             </ul>
             <h1 class="font-bold px-6">Using HTML CSS Tailwind</h1>
             <ul class="text-gray-700 mt-2 list-disc mx-10 ">
